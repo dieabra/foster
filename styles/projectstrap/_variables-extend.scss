@@ -1,0 +1,53 @@
+//
+// Project Variables
+// --------------------------------------------------
+
+
+// Footer
+$footer-height:                       	0px !default;
+$footer-bg:                           	transparent !default;
+$footer-border:                       	#eee !default;
+
+
+// Sidebar
+$sidebar-width:                       	260px !default;
+$sidebar-bg:                          	$brand-primary !default;
+$sidebar-default-border:              	darken($navbar-default-bg, 6.5%) !default;
+$sidebar-color:                       	#fff !default;
+$sidebar-active-hover-color:          	$text-color !default;
+$sidebar-active-hover-bg:             	#fff !default;
+$sidebar-hover-color:                 	$navbar-default-link-hover-color !default;
+
+// Sidebar Icon View (Toggled)
+$sidebar-icon-width:                  	90px !default;
+$sidebar-icon-font-size:				34px !default;
+
+
+// Sidebar Navs
+$sidebar-nav-padding:					20px 30px 23px !default;
+$sidebar-nav-font-size:					18px !default;
+$sidebar-nav-font-weight:				700 !default;
+
+
+// Sidebar Right
+$sidebar-right-width:                 	260px !default;
+$sidebar-right-bg:                    	#e5e5e5 !default;
+$sidebar-right-color:                 	$navbar-default-color !default;
+
+
+// Content
+$content-bg:                          	$body-bg !default;
+
+//== Buttons
+$btn-inverse-color:               		#fff !default;
+$btn-inverse-bg:                  		$gray-dark;
+$btn-inverse-border:              		rgba(0,0,0,0);
+
+//== Panels
+$panel-inverse-text:           			$btn-inverse-color;
+$panel-inverse-border:         			$btn-inverse-bg;
+$panel-inverse-heading-bg:     			$btn-inverse-bg;
+
+
+// is this extended????
+$alert-link-font-weight:         		700 !default;  

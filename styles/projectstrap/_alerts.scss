@@ -1,0 +1,35 @@
+
+// Alerts =====================================================================
+
+.alert {
+  margin-bottom: 10px;
+}
+.alert:not(.alert-default){
+  color: #fff;
+  a:not(.close),
+  .alert-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .close {
+    color: #fff;
+  }
+}
+
+.alert-default {
+  background-color: $gray-lighter;
+  .alert-link {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+.close {
+  font-weight: 300;
+  opacity: 0.6;
+  @include transition(all 0.2s);
+
+  &:hover {
+    opacity: 1;
+  }
+}

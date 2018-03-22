@@ -1,0 +1,140 @@
+// Buttons ====================================================================
+
+
+.btn-inverse {
+  @include button-variant($btn-inverse-color, $btn-inverse-bg, $btn-inverse-border);
+}
+
+@mixin btn($class,$bg){
+  .btn-#{$class} {
+    background-size: 200%;
+    background-position: 50%;
+
+    &:focus {
+      background-color: $bg;
+    }
+
+    &:hover,
+    &:active:hover {
+      background-color: lighten($bg, 12%);
+    }
+
+    &:active {
+      background-color: darken($bg, 4%);
+      @include gradient-radial(darken($bg, 4%) 10%, $bg 11%);
+      background-size: 1000%;
+      @include box-shadow(none);
+    }
+  }
+}
+
+@include btn(default,$btn-default-bg);
+@include btn(primary,$btn-primary-bg);
+@include btn(success,$btn-success-bg);
+@include btn(info,$btn-info-bg);
+@include btn(warning,$btn-warning-bg);
+@include btn(danger,$btn-danger-bg);
+@include btn(inverse,$btn-inverse-bg);
+@include btn(link,#fff);
+
+@mixin alink($class,$bg){
+  a.#{$class} {
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($bg, 10%);
+    }
+  }
+}
+@include alink(gray-darker,$gray-darker);
+@include alink(gray-dark,$gray-dark);
+@include alink(gray,$gray);
+@include alink(gray-light,$gray-light);
+@include alink(gray-lighter,$gray-lighter);
+
+.btn {
+  @include transition(all 0.4s);
+  margin-top: 5px;
+
+  &.btn-link {
+    border-radius: $btn-border-radius-base;
+    @include box-shadow(none);
+    color: $btn-default-color;
+
+    &:hover,
+    &:focus {
+      @include box-shadow(none);
+      color: $btn-default-color;
+      text-decoration: none;
+      background-color: transparent;
+      border-color: #ddd;
+    }
+  }
+
+  &.btn-default {
+    &.disabled {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0, 0.4);
+      opacity: 1;
+    }
+    &:hover,
+    &:focus {
+      background-color: #fff;
+    }
+  }
+
+}
+
+.btn-group {
+  .btn {
+    i {
+      position: relative;
+      top: 1px;
+      left: 0px;
+      margin-right: 4px;
+      margin-left: 1px;
+    }
+  }
+}
+
+.btn-group-justified {
+  margin-top: 5px;
+}
+
+
+// Circle Buttons
+
+.btn{
+  &.btn-circle{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 33px;
+    width: 33px;
+    padding: 0;
+    line-height: 0;
+    &.btn-xs{
+      height: 22px;
+      width: 22px;
+    }
+    &.btn-sm{
+      height: 28px;
+      width: 28px;
+    }
+    &.btn-lg{
+      height: 41px;
+      width: 41px;
+    }
+    &.btn-xl{
+      height: 60px;
+      width: 60px;
+      font-size: 26px;
+    }    
+  } 
+
+  &.btn-img{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}

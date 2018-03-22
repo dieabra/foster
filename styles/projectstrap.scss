@@ -1,0 +1,29 @@
+/*!
+
+Treego
+PROJECTSTRAP v0.0.1 beta - Jan 2017
+Core SASS module oriented project.
+(c) Modo Agencia www.modoagencia.com
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+// Core variables and mixins
+@import "projectstrap/variables-override";
+@import "projectstrap/variables-extend";
+
+// Bootstrap
+@import "bootstrap";
+
+// Theme
+@import "projectstrap/projectstrap";
+@import "projectstrap/treegostrap";
+
+// Plugins
+@import "plugins/pe-icons-stroke";
+@import "plugins/pe-icons-helper";
+@import "plugins/fontawesome/font-awesome";

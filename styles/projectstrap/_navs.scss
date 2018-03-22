@@ -1,0 +1,66 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+
+// Tabs ======================================================================
+
+
+.nav {
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+.nav-tabs {
+  > li {
+    float: left;
+
+    > a {
+      color: $text-color;
+      &:hover {
+        border-bottom-color:  $brand-primary;
+        background-color: transparent;
+        color: $brand-primary;
+      }
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        border-color:transparent transparent $brand-primary transparent;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @extend .nav-justified;
+    @extend .nav-tabs-justified;
+  }
+
+  .disabled {
+    > a {
+      &:hover {
+        border-bottom-color: #ddd;
+      }
+    }
+  }
+}
+
+
+.nav-tabs-justified {
+  @media (min-width: $screen-sm-min) {
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      border-color: transparent;
+      border-bottom-color: $brand-primary;
+    }
+  }
+}

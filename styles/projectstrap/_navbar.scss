@@ -1,0 +1,100 @@
+
+// Navbar Toggles =====================================================================
+
+.navbar {
+  .sidebar-toggle {
+    float: left;
+    background-color: darken($navbar-inverse-bg, 10%);
+    color: $gray-light;
+    height: $navbar-height;
+    width: $navbar-height;
+    text-align: center;
+    padding-top: 12px; //subject to icon used
+    i {
+      font-size: 24px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: lighten($navbar-inverse-bg, 10%);
+    }
+  }
+}
+
+// Navbar =====================================================================
+
+.navbar {
+  border: none;
+
+  &.navbar-inverse {
+    .navbar-form {
+
+      input[type=text],
+      input[type=password] {
+        color: #fff;
+        background-color: darken($navbar-inverse-bg, 10%);
+        border-color: lighten($navbar-inverse-bg, 20%);
+        &:focus {
+          border-color: $brand-primary;
+        }
+      }
+      .btn-inverse {
+        background-color: darken($navbar-inverse-bg, 10%);
+        border-color: lighten($navbar-inverse-bg, 20%);
+        border-left: 0;
+        padding: 6px 10px;
+        &:hover {
+          background-color: lighten($navbar-inverse-bg, 3%);
+        }
+      }
+    }
+  }
+  .navbar-form {
+    .btn {
+      margin-top: 0;
+      height: 34px;
+    }
+    i {
+      font-size: 1.4em;
+    }
+    .input-group {
+      margin-top: 0;
+    }
+  }
+  &:not(.navbar-fixed-top) {
+    .navbar-right {
+      li {
+        &:last-child {
+          .navbar-form {
+            padding-right: 0px;
+            margin-right: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  > li {
+    > .dropdown-menu {
+      border-radius: 0;
+    }
+  }
+}
+
+.navbar-toggle {
+  margin-right: 5px;
+}
+
+
+@media (max-width: 767px) {
+  .navbar {
+    .navbar-brand {
+      width: calc(100% - 100px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

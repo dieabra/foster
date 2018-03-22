@@ -1,0 +1,113 @@
+
+// Carousel ==================================================================
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: 180px;
+
+  &.left {
+    left: 10px;
+    @include gradient-horizontal($start-color: rgba(0,0,0,0), $end-color: rgba(0,0,0,0));
+  }
+  &.right {
+    right: 10px;
+    @include gradient-horizontal($start-color: rgba(0,0,0,0), $end-color: rgba(0,0,0,0));
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    @include opacity(1);
+    background-color: $brand-primary;
+  }
+
+  // Toggles
+  .icon-prev,
+  .icon-next,
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right {
+    margin-top: -8px;
+  }
+  .icon-prev,
+  .glyphicon-chevron-left {
+    margin-left: -8px;
+  }
+  .icon-next,
+  .glyphicon-chevron-right {
+    margin-right: -8px;
+  }
+
+
+
+}
+
+// Scale up controls for tablets and up
+@media screen and (min-width: $screen-sm-min) {
+
+  // Scale up the controls a smidge
+  .carousel-control {
+
+    &.left {
+      left: 20px;
+    }
+    &.right {
+      right: 20px;
+    }
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right,
+    .icon-prev,
+    .icon-next {
+      width: auto;
+      height: auto;
+      margin-top: -11px;
+    }
+    .glyphicon-chevron-left,
+    .icon-prev {
+      margin-left: -11px;
+    }
+    .glyphicon-chevron-right,
+    .icon-next {
+      margin-right: -11px;
+    }
+  }
+
+}
+
+ @media (min-width: $screen-lg-min) {
+    .carousel-control {
+      top: 260px;
+    }
+  }
+
+.carousel-inner {
+  .thumbnail {
+    > a {
+      height: 200px;
+      overflow: hidden;
+      display: block;
+      background-color: #efefef;
+      margin: -4px -4px 0px;
+      @media (min-width: $screen-lg-min) {
+        height: 280px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+#latest-news-carousel {
+  .caption {
+    h3 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+

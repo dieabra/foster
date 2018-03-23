@@ -6048,7 +6048,7 @@ tbody.collapse.in {
 }
 /* line 397, bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f6f6f6;
+  background-color: rgba(0, 0, 0, 0);
   border-color: transparent;
 }
 /* line 401, bootstrap/_navbar.scss */
@@ -6071,12 +6071,12 @@ tbody.collapse.in {
 /* line 419, bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
-  background-color: white;
+  background-color: rgba(13, 13, 13, 0);
 }
 /* line 427, bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #333333;
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0);
 }
 /* line 435, bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6102,7 +6102,7 @@ tbody.collapse.in {
 }
 /* line 464, bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0);
   color: #333333;
 }
 @media (max-width: 767px) {
@@ -6113,12 +6113,12 @@ tbody.collapse.in {
   /* line 476, bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333333;
-    background-color: white;
+    background-color: rgba(13, 13, 13, 0);
   }
   /* line 484, bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #333333;
-    background-color: #eeeeee;
+    background-color: rgba(0, 0, 0, 0);
   }
   /* line 492, bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -11857,41 +11857,92 @@ body {
   }
 }
 
+/*--- Estilos para el navbar ---*/
 /*--- Estilos para el video background ---*/
-/* line 24, projectstrap/_treegostrap.scss */
+/* line 28, projectstrap/_treegostrap.scss */
 .video-background {
   background: #000;
-  height: calc(100vh - 50px);
+  height: 100vh;
   position: relative;
   z-index: -99;
+  margin-top: -50px;
 }
 @media (max-width: 767px) {
-  /* line 24, projectstrap/_treegostrap.scss */
+  /* line 28, projectstrap/_treegostrap.scss */
   .video-background {
-    height: calc(100vh - 50px - 55px);
+    height: calc(100vh - 55px);
   }
 }
 
-/* line 35, projectstrap/_treegostrap.scss */
+/* line 40, projectstrap/_treegostrap.scss */
 .video-foreground,
 .video-background iframe {
   width: 100%;
   height: 100%;
 }
 
-/*--- Estilos para la pastilla de imagen con texto ---*/
-/* line 42, projectstrap/_treegostrap.scss */
-.info-box {
-  padding: 50px 0;
+/*--- Estilos para section steps ---*/
+/* line 46, projectstrap/_treegostrap.scss */
+.title-section {
+  text-align: center;
+  font-size: 60px;
 }
 @media (max-width: 767px) {
-  /* line 42, projectstrap/_treegostrap.scss */
-  .info-box {
-    padding: 20px 0;
+  /* line 46, projectstrap/_treegostrap.scss */
+  .title-section {
+    font-size: 42px;
   }
 }
 
-/* line 48, projectstrap/_treegostrap.scss */
+/* line 54, projectstrap/_treegostrap.scss */
+.steps {
+  background-color: #f9f9f9;
+  padding: 70px 0;
+}
+/* line 57, projectstrap/_treegostrap.scss */
+.steps .step-info {
+  font-size: 20px;
+  margin-top: 20px;
+}
+/* line 62, projectstrap/_treegostrap.scss */
+.steps .circle-number {
+  height: 90px;
+  width: 90px;
+  background-color: #3ccc4e;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px auto 0;
+}
+/* line 70, projectstrap/_treegostrap.scss */
+.steps .circle-number .number {
+  font-size: 50px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/*--- Estilos para la pastilla de imagen con texto ---*/
+/* line 82, projectstrap/_treegostrap.scss */
+.info-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 85, projectstrap/_treegostrap.scss */
+.info-box .info-box-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  /* line 85, projectstrap/_treegostrap.scss */
+  .info-box .info-box-text {
+    margin-top: 30px;
+  }
+}
+
+/* line 93, projectstrap/_treegostrap.scss */
 .bg-image {
   height: 500px;
   background-size: cover;
@@ -11900,44 +11951,44 @@ body {
 }
 
 /*--- Estilos para el menu ---*/
-/* line 57, projectstrap/_treegostrap.scss */
+/* line 102, projectstrap/_treegostrap.scss */
 .nav-tabs {
   text-align: center;
 }
-/* line 59, projectstrap/_treegostrap.scss */
+/* line 104, projectstrap/_treegostrap.scss */
 .nav-tabs > li {
   float: none;
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
 }
-/* line 65, projectstrap/_treegostrap.scss */
+/* line 110, projectstrap/_treegostrap.scss */
 .nav-tabs > li > a {
   font-size: 20px;
 }
-/* line 70, projectstrap/_treegostrap.scss */
+/* line 115, projectstrap/_treegostrap.scss */
 .nav-tabs > li.active > a, .nav-tabs > li:hover > a, .nav-tabs > li:focus > a {
   background-color: transparent;
 }
-/* line 72, projectstrap/_treegostrap.scss */
+/* line 117, projectstrap/_treegostrap.scss */
 .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li:hover > a:hover, .nav-tabs > li:hover > a:focus, .nav-tabs > li:focus > a:hover, .nav-tabs > li:focus > a:focus {
   background-color: transparent;
 }
 
-/* line 80, projectstrap/_treegostrap.scss */
+/* line 125, projectstrap/_treegostrap.scss */
 .menu {
   padding: 50px 0;
   background-color: #f9f9f9;
 }
 
-/* line 86, projectstrap/_treegostrap.scss */
+/* line 131, projectstrap/_treegostrap.scss */
 .tab-pane .flex-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 94, projectstrap/_treegostrap.scss */
+/* line 139, projectstrap/_treegostrap.scss */
 .menu-item {
   border-radius: 7px;
   overflow: hidden;
@@ -11950,12 +12001,13 @@ body {
   text-align: left;
 }
 @media (max-width: 767px) {
-  /* line 94, projectstrap/_treegostrap.scss */
+  /* line 139, projectstrap/_treegostrap.scss */
   .menu-item {
     width: 100%;
+    margin-right: 0;
   }
 }
-/* line 113, projectstrap/_treegostrap.scss */
+/* line 159, projectstrap/_treegostrap.scss */
 .menu-item.vertical .icon-info {
   position: absolute;
   right: 14px;
@@ -11963,11 +12015,11 @@ body {
   color: rgba(51, 51, 51, 0.6);
   font-size: 24px;
 }
-/* line 119, projectstrap/_treegostrap.scss */
+/* line 165, projectstrap/_treegostrap.scss */
 .menu-item.vertical .icon-info.gray8 {
   color: #999;
 }
-/* line 123, projectstrap/_treegostrap.scss */
+/* line 169, projectstrap/_treegostrap.scss */
 .menu-item.vertical .icon-tag {
   position: absolute;
   top: -3px;
@@ -11977,7 +12029,7 @@ body {
   width: 90px;
   transform: rotate(-45deg);
 }
-/* line 134, projectstrap/_treegostrap.scss */
+/* line 180, projectstrap/_treegostrap.scss */
 .menu-item.vertical .icon-bowl {
   position: absolute;
   top: 8px;
@@ -11986,7 +12038,7 @@ body {
   font-size: 21px;
   transform: rotate(31deg);
 }
-/* line 144, projectstrap/_treegostrap.scss */
+/* line 190, projectstrap/_treegostrap.scss */
 .menu-item.vertical .box-image-item {
   height: 247px;
   overflow: hidden;
@@ -11995,23 +12047,23 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 151, projectstrap/_treegostrap.scss */
+/* line 197, projectstrap/_treegostrap.scss */
 .menu-item.vertical .box-image-item .img-responsive {
   margin: auto;
 }
-/* line 160, projectstrap/_treegostrap.scss */
+/* line 206, projectstrap/_treegostrap.scss */
 .menu-item.vertical .info-bowl {
   margin-left: 0;
   padding: 22px 20px;
 }
-/* line 163, projectstrap/_treegostrap.scss */
+/* line 209, projectstrap/_treegostrap.scss */
 .menu-item.vertical .info-bowl .bowl-title {
   width: 100%;
   color: #ff6854;
   font-size: 30px;
   margin: 0;
 }
-/* line 169, projectstrap/_treegostrap.scss */
+/* line 215, projectstrap/_treegostrap.scss */
 .menu-item.vertical .info-bowl .ingredients-bowl {
   font-size: 16px;
   color: #656565;
@@ -12023,13 +12075,13 @@ body {
   overflow: hidden;
   min-height: 88px;
 }
-/* line 180, projectstrap/_treegostrap.scss */
+/* line 226, projectstrap/_treegostrap.scss */
 .menu-item.vertical .info-bowl .bowl-proteins {
   color: #656565;
 }
 
 /*--- Footer ---*/
-/* line 190, projectstrap/_treegostrap.scss */
+/* line 236, projectstrap/_treegostrap.scss */
 footer {
   width: 100%;
   background-color: #fff;

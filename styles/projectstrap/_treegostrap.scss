@@ -19,16 +19,21 @@ body{
     }
 }
 
+/*--- Estilos para el navbar ---*/
+.navbar{
+
+}
 
 /*--- Estilos para el video background ---*/
 .video-background {
   background: #000;
-  height: calc(100vh - #{$navbar-height});
+  height: 100vh;
   position: relative;
   z-index: -99;
+  margin-top: -#{$navbar-height};
 
   @media (max-width: 767px) {
-  	height: calc(100vh - #{$navbar-height} - 55px);
+  	height: calc(100vh - 55px);
   }
 }
 .video-foreground,
@@ -37,12 +42,52 @@ body{
   height: 100%;
 }
 
+/*--- Estilos para section steps ---*/
+.title-section{
+	text-align: center;
+	font-size: 60px;
+	@media (max-width: 767px) {
+		font-size: 42px;
+	}
+}
+
+.steps{
+	background-color: #f9f9f9;
+	padding: 70px 0;
+	.step-info{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.circle-number{
+		height: 90px;
+		width: 90px;
+		background-color: $brand-success;
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 30px auto 0;
+		.number{
+			font-size: 50px;
+			position: absolute;
+			top: 52%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+		}
+	}
+}
 
 /*--- Estilos para la pastilla de imagen con texto ---*/
 .info-box{
-	padding: 50px 0;
-	@media (max-width: 767px) {
-		padding: 20px 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	.info-box-text{
+	    font-size: 18px;
+    	line-height: 1.6;
+		@media (max-width: 767px) {
+			margin-top: 30px;
+		}
 	}
 }
 .bg-image{
@@ -103,6 +148,7 @@ body{
     text-align: left;
     @media(max-width: 767px){
     	width: 100%;
+    	margin-right: 0;
     }
 
   

@@ -11908,14 +11908,128 @@ body {
 .nav-tabs > li {
   float: none;
   display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
 }
-/* line 62, projectstrap/_treegostrap.scss */
+/* line 65, projectstrap/_treegostrap.scss */
 .nav-tabs > li > a {
   font-size: 20px;
 }
+/* line 70, projectstrap/_treegostrap.scss */
+.nav-tabs > li.active > a, .nav-tabs > li:hover > a, .nav-tabs > li:focus > a {
+  background-color: transparent;
+}
+/* line 72, projectstrap/_treegostrap.scss */
+.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li:hover > a:hover, .nav-tabs > li:hover > a:focus, .nav-tabs > li:focus > a:hover, .nav-tabs > li:focus > a:focus {
+  background-color: transparent;
+}
+
+/* line 80, projectstrap/_treegostrap.scss */
+.menu {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+/* line 86, projectstrap/_treegostrap.scss */
+.tab-pane .flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 94, projectstrap/_treegostrap.scss */
+.menu-item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  width: 370px;
+  /*height: 100%;    */
+  background-color: #fff;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  /* line 94, projectstrap/_treegostrap.scss */
+  .menu-item {
+    width: 100%;
+  }
+}
+/* line 113, projectstrap/_treegostrap.scss */
+.menu-item.vertical .icon-info {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 24px;
+}
+/* line 119, projectstrap/_treegostrap.scss */
+.menu-item.vertical .icon-info.gray8 {
+  color: #999;
+}
+/* line 123, projectstrap/_treegostrap.scss */
+.menu-item.vertical .icon-tag {
+  position: absolute;
+  top: -3px;
+  left: -30px;
+  height: 35px;
+  background: #ff6854;
+  width: 90px;
+  transform: rotate(-45deg);
+}
+/* line 134, projectstrap/_treegostrap.scss */
+.menu-item.vertical .icon-bowl {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #fff;
+  font-size: 21px;
+  transform: rotate(31deg);
+}
+/* line 144, projectstrap/_treegostrap.scss */
+.menu-item.vertical .box-image-item {
+  height: 247px;
+  overflow: hidden;
+  background-color: #cccfd2;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 151, projectstrap/_treegostrap.scss */
+.menu-item.vertical .box-image-item .img-responsive {
+  margin: auto;
+}
+/* line 160, projectstrap/_treegostrap.scss */
+.menu-item.vertical .info-bowl {
+  margin-left: 0;
+  padding: 22px 20px;
+}
+/* line 163, projectstrap/_treegostrap.scss */
+.menu-item.vertical .info-bowl .bowl-title {
+  width: 100%;
+  color: #ff6854;
+  font-size: 30px;
+  margin: 0;
+}
+/* line 169, projectstrap/_treegostrap.scss */
+.menu-item.vertical .info-bowl .ingredients-bowl {
+  font-size: 16px;
+  color: #656565;
+  margin-top: 12px;
+  clear: both;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  min-height: 88px;
+}
+/* line 180, projectstrap/_treegostrap.scss */
+.menu-item.vertical .info-bowl .bowl-proteins {
+  color: #656565;
+}
 
 /*--- Footer ---*/
-/* line 71, projectstrap/_treegostrap.scss */
+/* line 190, projectstrap/_treegostrap.scss */
 footer {
   width: 100%;
   background-color: #fff;

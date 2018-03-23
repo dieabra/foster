@@ -59,10 +59,129 @@ body{
 	> li{
 		float: none;
 		display: inline-block;
+		cursor: pointer;
+		background-color: transparent;
+		
 		>a {
 			font-size: 20px;
 		}
+
+		&.active, &:hover, &:focus{
+			> a{
+				background-color: transparent;
+				&:hover, &:focus{
+					background-color: transparent;
+				}
+			}
+		}
 	}
+}
+
+.menu{
+	padding: 50px 0;
+	background-color: #f9f9f9; 
+}
+
+.tab-pane	{
+	.flex-grid{
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+		
+	}
+}
+
+.menu-item {
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    width: 370px;
+    /*height: 100%;    */
+    background-color: #fff;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: left;
+    @media(max-width: 767px){
+    	width: 100%;
+    }
+
+  
+    // Menu Item Vertical
+    // ======================================================================
+    &.vertical{ 
+ 
+        .icon-info{
+            position:absolute;
+            right: 14px;
+            top: 14px;
+            color: rgba(51,51,51,0.6);
+            font-size: 24px;
+            &.gray8{
+                color: #999;
+            }
+        }  
+        .icon-tag{
+            position: absolute;
+            top: -3px;
+            left: -30px;
+            height: 35px;
+            background: $brand-primary;
+            width: 90px;
+            transform: rotate(-45deg);
+        }
+
+        // Estilos para el leaf icon
+        .icon-bowl{
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            color: #fff;
+            font-size: 21px;
+            transform: rotate(31deg);
+        }
+
+        // Estilos para la imagen del producto
+        .box-image-item{
+            height: 247px;
+            overflow: hidden;
+            background-color: #cccfd2;
+            background-size: cover;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+            .img-responsive{
+                margin: auto;
+            }            
+        }
+
+
+        // Info Bowl
+        // ======================================================================
+
+        .info-bowl{
+            margin-left: 0;
+            padding: 22px 20px;
+           .bowl-title{
+                width: 100%;
+                color: $brand-primary;
+                font-size: 30px;
+                margin: 0;
+            }
+            .ingredients-bowl{
+                font-size: 16px;
+                color: #656565;
+                margin-top: 12px;
+                clear: both;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+                min-height: 88px;
+            }
+            .bowl-proteins{
+               color: #656565;
+            }     
+        }  
+    }
 }
 
 

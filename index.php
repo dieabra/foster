@@ -109,16 +109,82 @@
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1262275909576!2d-58.37513848477037!3d-34.60096948046026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccbe60f5ad%3A0x682432c0c00380e!2sF%C5%8Dster+Nutrition!5e0!3m2!1sen!2sar!4v1521730943067&" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>   
+    
+   <!--  <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+             <li data-filter="all"> All items </li>
+             <li data-filter="5"> Category 5 </li>
+             <li data-filter="4"> Category 4 </li>
+          </ul> 
+
+        </div>
+      </div>  
+      <div class="row">
+        <div class="filtr-container">
+          <div class="filtr-item col-sm-3" data-category="5"><img src="img/FosterNutritionID_05.png" class="img-responsive" alt=""></div>
+          <div class="filtr-item col-sm-3" data-category="5"><img src="img/FosterNutritionID_05.png" class="img-responsive" alt=""></div>
+          <div class="filtr-item col-sm-3" data-category="4"><img src="img/FosterNutritionID_04.png" class="img-responsive" alt=""></div>
+          <div class="filtr-item col-sm-3" data-category="4"><img src="img/FosterNutritionID_04.png" class="img-responsive" alt=""></div>
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="nav nav-tabs margintop50">
+            <li><a data-filter="all">Todos</a></li>
+            <li><a data-filter="bowls">Bowls</a></li>
+            <li><a data-filter="colaciones">Colaciones</a></li>
+            <li><a data-filter="bebidas">Bebidas</a></li>
+            <li><a data-filter="wraps">Wraps</a></li>
+            <li><a data-filter="sopas">Sopas</a></li>
+            <li><a data-filter="cafeyte">Café y te</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="margintop30 filtr-container" id="nav-tabContent">
+          <div class="filtr-item col-sm-3" data-category="bowls">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="filtr-item col-sm-3" data-category="colaciones">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="filtr-item col-sm-3" data-category="bebidas">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="filtr-item col-sm-3" data-category="wraps">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="filtr-item col-sm-3" data-category="sopas">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="filtr-item col-sm-3" data-category="cafeyte">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
 
 
     <!-- FOOTER -->
-    <?php include ('/partials/footer.php'); ?>
+    <?php include ('partials/_footer.php'); ?>
 
   
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <?php include('partials/_footer.php'); ?>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script>
+      var filterizd = $('.filtr-container').filterizr({
+         //options object
+      });
+    </script>
 
   </body>
 </html>

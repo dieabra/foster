@@ -482,7 +482,7 @@
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
-                  $helpBlock.html("<p class=\"text-danger marginbottom40\">" + errorsFound.join ("</p>") +
+                  $helpBlock.html("<p class=\"text-danger marginbottom20\">" + errorsFound.join ("</p>") +
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 }
               } else {

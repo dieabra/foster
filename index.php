@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-4 wow fadeInUp">
+            <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">
@@ -49,7 +49,7 @@
                 <p class="step-info">Hacé tu pedido en una de las tablets</p>
               </div>
             </div>
-             <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
+             <div class="col-sm-4 wow fadeInUp" data-wow-delay="1s">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">3'</div>
@@ -57,7 +57,7 @@
                 <p class="step-info">Esperá 3 minutos mientras preparamos tu pedido</p>
               </div>
             </div>
-             <div class="col-sm-4 wow fadeInUp" data-wow-delay="1s">
+             <div class="col-sm-4 wow fadeInUp" data-wow-delay="1.5s">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">
@@ -76,11 +76,11 @@
     <section class="info-box">
       <div class="container">
         <div class="row row-eq-height">
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-jarallax-element="-140">
             <div class="bg-image" style="background-image: url('https://instagram.faep8-2.fna.fbcdn.net/vp/7e5ec728ca1cf25c9a9ece048a2e7acf/5B42FD34/t51.2885-15/e35/28158574_302286526965205_9108094659363602432_n.jpg')"></div>
           </div>
           <div class="col-sm-6">
-            <p class="info-box-text">Somos una empresa focalizada en el desarrollo de nuevas tecnologías para mejorar la calidad de vida de personas. Gracias a la rápida y constante evolución de la tecnología, y la gran facilidad de la gente de adaptarse a estos cambios aún en la actividades más cotidianas, es que decidimos encarar nuestro primer desarrollo: un local gastronómico inteligente. En nuestro local la experiencia del consumidor va a ser completamente diferente a lo que estamos acostumbrados. Se puede cubrir la totalidad de la experiencia de consumo sin interactuar con personas y de manera muy eficiente. Implementando tecnología IOT logramos que el pedido, el pago y el expendio de la comida se puedan hacer de manera autónoma. 
+            <p class="info-box-text right">Somos una empresa focalizada en el desarrollo de nuevas tecnologías para mejorar la calidad de vida de personas. Gracias a la rápida y constante evolución de la tecnología, y la gran facilidad de la gente de adaptarse a estos cambios aún en la actividades más cotidianas, es que decidimos encarar nuestro primer desarrollo: un local gastronómico inteligente. En nuestro local la experiencia del consumidor va a ser completamente diferente a lo que estamos acostumbrados. Se puede cubrir la totalidad de la experiencia de consumo sin interactuar con personas y de manera muy eficiente. Implementando tecnología IOT logramos que el pedido, el pago y el expendio de la comida se puedan hacer de manera autónoma. 
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@
             <div class="bg-image" style="background-image: url('https://instagram.faep8-2.fna.fbcdn.net/vp/af4839fa5ae06d603f13cf9638ffda15/5B2D149C/t51.2885-15/e35/28432939_378143195988871_8436313906858688512_n.jpg')"></div>
           </div>
           <div class="col-sm-6 col-sm-pull-6">
-            <p class="info-box-text"> Nuestro sistema incluye Windows IOT, computadores Raspberry Pi, tablets, boxes automatizados (desarrollados por nosotros) y una aplicación propia. Una aplicación en la nube gestiona los pedidos y pagos que se realizan desde las tablets (y próximamente de una App Mobile); envía esta información al sector de producción y asiste en el armado de los platos. Luego controla y ordena la cola de pedidos para luego seleccionar y accionar los boxes de autoservicio correspondientes para retirar el pedido. <br><br>
+            <p class="info-box-text left"> Nuestro sistema incluye Windows IOT, computadores Raspberry Pi, tablets, boxes automatizados (desarrollados por nosotros) y una aplicación propia. Una aplicación en la nube gestiona los pedidos y pagos que se realizan desde las tablets (y próximamente de una App Mobile); envía esta información al sector de producción y asiste en el armado de los platos. Luego controla y ordena la cola de pedidos para luego seleccionar y accionar los boxes de autoservicio correspondientes para retirar el pedido. <br><br>
 
             Queremos eficientizar los locales de comidas rápidas, agilizar la operatoria para que le gente pueda disponer de su tiempo libre, minimizar los errores logrando la mejor repetitividad posible de los platos, simplificar el proceso de punta a punta y brindarle a la gente una alimentación sana y de calidad.</p>
           </div>
@@ -138,36 +138,17 @@
 
     <section class="margintop80">
       <div class="text-center marginbottom50">
-        <h4 class="text-primary">Encontranos en pleno microcentro</h4>
+        <h4 class="title-section">Encontranos en <br> pleno microcentro</h4>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1262275909576!2d-58.37513848477037!3d-34.60096948046026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccbe60f5ad%3A0x682432c0c00380e!2sF%C5%8Dster+Nutrition!5e0!3m2!1sen!2sar!4v1521730943067&" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>   
-
+      <div id="map"></div>
+    </section>       
     
 
     <!-- FOOTER -->
     <?php include ('partials/_footer.php'); ?>
-
   
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- JS -->
-    <?php include ('partials/_javascript.php'); ?>
-
-    <script>
-      $(document).ready(function() {
-        $('.navbar').hide();
-        $(window).scroll(function() {
-          if ($(document).scrollTop() > 100) {
-            $('.navbar').fadeIn('slow').addClass('navbar-fixed-top');
-          }
-          else {
-            $('.navbar').fadeOut('slow');
-          }
-        });
-      })
-    </script>
+    <?php include ('partials/_javascript.php'); ?>    
 
   </body>
 </html>

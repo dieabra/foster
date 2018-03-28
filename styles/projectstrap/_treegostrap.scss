@@ -14,6 +14,7 @@ body{
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     @media (max-width: 767px) {
     	display: block;
     }
@@ -24,6 +25,7 @@ body{
 /*--- Estilos para el navbar ---*/
 .navbar{
 	z-index: 1050;
+	display: none;
 	.navbar-brand{
 		padding: 13px 15px;
 		img{
@@ -67,7 +69,7 @@ body{
 			width: 100%;
 			img{
 				margin: auto;
-				max-width: 25%;
+				max-width: 391px;
 				position: relative;
 				top: -35px;
 			}
@@ -126,7 +128,7 @@ body{
 	text-align: center;
 	font-size: 60px;
 	@media (max-width: 767px) {
-		font-size: 42px;
+		font-size: 40px;
 	}
 }
 
@@ -164,8 +166,22 @@ body{
 	.info-box-text{
 	    font-size: 18px;
     	line-height: 1.6;
+    	background-color: $brand-primary;
+    	color: #fff;
+    	padding: 20px;
+    	box-shadow: 0 0 8px rgba(0,0,0,0.6);
+		&.left{
+			margin-right: -20%;
+		}
+		&.right{
+			margin-left: -20%;
+		}
 		@media (max-width: 767px) {
 			margin-top: 30px;
+			&.left, &.right{
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
 	}
 }
@@ -314,6 +330,16 @@ body{
 
 
 
+/*---   Estilos para el mapa ---*/
+#map{
+	height: 450px;
+	.gmnoprint{
+		img{
+			max-width: 20px !important;
+		}
+	}
+}
+
 /*--- Footer ---*/
 
 footer{
@@ -370,6 +396,25 @@ footer{
 		}
 		.btn-footer{
 			margin-top: 20px;
+		}
+	}
+}
+
+/*--- Estilos para el modal contacto ---*/
+#modal-contacto{
+	form{
+		margin-bottom: 0;
+		.modal-body{
+			padding: 30px 30px 0;
+			.form-group{
+				&.no-margin{
+					margin-bottom: 0;
+				}
+			}			
+		}
+		.modal-footer{
+			padding: 15px 20px 30px;
+			text-align: center;
 		}
 	}
 }

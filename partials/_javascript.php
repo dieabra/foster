@@ -1,9 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/clipboard.min.js"></script>
 <script src="/js/project.js"></script>
 <script src="/js/jquery.filterizr.min.js"></script>
+<script src="/js/jarallax.min.js"></script>
 <script src="/js/wow.min.js"></script>
 <script src="/js/contact_me.js"></script>
 <script src="/js/jqBootstrapValidation.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD28d0FNPBTHJoGbc-a86x7VzFwafsVDxs&callback=initMap"></script>
+
+<!-- Script para el mapa -->
+<script>
+      function initMap() {
+        var uluru = {lat: -34.600898, lng: -58.372897};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: 'img/map-marker-foster.png'
+        });
+      }
+    </script>
 
 
 <script type="text/javascript">
@@ -20,41 +40,6 @@
 <script>
   new WOW().init();
 </script>
-
-
-
-
-<!-- Script para animación de navbar fixed -->
-<script>
-
-  // get header height (without border)
-  var getHeaderHeight = $('.navbar-sticky-animated').outerHeight();
-
-  // init variable for last scroll position
-  var lastScrollPosition = 0;
-
-  // set negative top position to create the animated header effect
-  $('.navbar-sticky-animated').css('top', '-' + (getHeaderHeight) + 'px');
-
-  $(window).scroll(function() {
-    var currentScrollPosition = $(window).scrollTop();
-
-    if ($(window).scrollTop() > 2 * (getHeaderHeight) ) {
-
-	    $('body').addClass('scrollActive').css('padding-top', getHeaderHeight);
-        $('.navbar-sticky-animated').css('top', 0);
-
-        if (currentScrollPosition < lastScrollPosition) {
-          $('.navbar-sticky-animated').css('top', '-' + (getHeaderHeight) + 'px');
-        }
-        lastScrollPosition = currentScrollPosition;
-
-      } else {
-        $('body').removeClass('scrollActive').css('padding-top', 0);
-    }
-  });
-</script>
-
 
 
 <!-- Script para que carousel se pueda pasar de slide haciendo swipe en mobile -->
@@ -114,8 +99,25 @@
 </script>
 
 
+<!-- Script para ir a explanation al hacer click en flecha -->
 <script>
   $(document).on('click', '#more', function(){
     $("html, body").animate({ scrollTop: $(".explanation").offset().top }, 1000);
   });    
+</script>
+
+<!-- Script para ocultar el navbar y mostrarlo en fade in al scrollear -->
+
+<script>
+  $('.navbar').hide();
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 100) {
+        $('.navbar').fadeIn('slow').addClass('navbar-fixed-top');
+      }
+      else {
+        $('.navbar').fadeOut('slow');
+      }
+    });
+  })
 </script>

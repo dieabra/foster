@@ -1,4 +1,4 @@
-/*$(function() {
+$(function() {
     
 
     $("input,textarea").not(".submit").jqBootstrapValidation({
@@ -83,7 +83,7 @@
     });
 
  
-});*/
+});
 
 // When clicking on Full hide fail/success boxes
 $('#name').focus(function() {

@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Foster</a>
+      <a class="navbar-brand" href="#"><img src="img/FosterNutritionID_04.png" class="img-responsive" alt=""></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Active Link <span class="sr-only">(current)</span></a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
       </ul>        
     </div>

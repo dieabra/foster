@@ -122,6 +122,18 @@
   }
 }
 
+.navbar-default{
+  .navbar-nav{
+    > .active{
+      > a{
+        &:hover{
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
 
 // NAVBAR-ANIMATION-TOP=================================================================
 /*--- Estilos para el navbar animation top al scrollear ---*/

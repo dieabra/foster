@@ -176,9 +176,9 @@ $btn-danger-border:              rgba(0,0,0,0);
 $btn-link-disabled-color:        $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base:         $border-radius-base !default;
-$btn-border-radius-large:        $border-radius-large !default;
-$btn-border-radius-small:        $border-radius-small !default;
+$btn-border-radius-base:         10em !default;
+$btn-border-radius-large:        10em !default;
+$btn-border-radius-small:        10em !default;
 
 
 //== Forms
@@ -274,7 +274,7 @@ $dropdown-caret-color:           $gray !default;
 //
 // Note: These variables are not generated into the Customizer.
 
-$zindex-navbar:            1000 !default;
+$zindex-navbar:            1050 !default;
 $zindex-dropdown:          1000 !default;
 $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
@@ -362,7 +362,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    80px !default;
 $navbar-margin-bottom:             0 !default;
 $navbar-border-radius:             0 !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -375,7 +375,7 @@ $navbar-default-border:            transparent !default;
 
 // Navbar links
 $navbar-default-link-color:                $gray !default;
-$navbar-default-link-hover-color:          $gray-dark !default;
+$navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             lighten($navbar-default-bg, 5%) !default;
 $navbar-default-link-active-color:         $gray-dark !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 3%) !default;

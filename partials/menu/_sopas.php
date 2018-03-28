@@ -1,11 +1,10 @@
 <div class="tab-pane fade" id="sopas" role="tabpanel" aria-labelledby="sopas-tab">
   <div class="flex-grid">
     <div class="menu-item vertical">
-      <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i>
+      <!-- <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i> -->
       <a class="add-product">
         <div class="icon-tag hidden"></div>
         <i class="pe-7s-leaf icon-bowl hidden"></i>
-
         <div class="box-image-item" style="background-image: url('https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/inline-images/sopas-mexico-2.jpg');">                            
            <!--  <img src="https://img.taste.com.au/io7u6bKg/w643-h428-cfill-q90/taste/2017/09/easy-beef-quinoa-salad-bowl_1980x1320-130617-1.jpg" class="img-responsive" alt="Bowl image" /> -->
         </div>
@@ -14,18 +13,18 @@
           <p class="ingredients-bowl">
             Remolacha, zanahoria, cream cheese, croutones de pan integral.
           </p>
-          <div class="bowl-proteins truncate">
+<!--           <div class="bowl-proteins truncate">
             <div class="box-width-left truncate">
                 <span><i class="pe-7s-graph2"></i> 0cal</span>
                 <span class="marginleft10"><i class="pe-7s-graph1"></i> 250g</span>
             </div>
-            <!-- <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div> -->
-          </div>
+            <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div>
+          </div> -->
         </div>
       </a>              
     </div> 
     <div class="menu-item vertical">
-      <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i>
+      <!-- <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i> -->
       <a class="add-product">
         <div class="icon-tag hidden"></div>
         <i class="pe-7s-leaf icon-bowl hidden"></i>
@@ -38,18 +37,18 @@
           <p class="ingredients-bowl">
             Zapallo kabutia, kale salteado en martini, crema de leche, semillas de zapallo tostadas.
           </p>
-          <div class="bowl-proteins truncate">
+<!--           <div class="bowl-proteins truncate">
             <div class="box-width-left truncate">
                 <span><i class="pe-7s-graph2"></i> 0cal</span>
                 <span class="marginleft10"><i class="pe-7s-graph1"></i> 250g</span>
             </div>
-            <!-- <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div> -->
-          </div>
+            <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div>
+          </div> -->
         </div>
       </a>              
     </div> 
     <div class="menu-item vertical">
-      <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i>
+      <!-- <i class="pe-7s-info icon-info" data-toggle="modal" data-target="#item-details"></i> -->
       <a class="add-product">
         <div class="icon-tag hidden"></div>
         <i class="pe-7s-leaf icon-bowl hidden"></i>
@@ -61,13 +60,13 @@
           <p class="ingredients-bowl">
             Papa, puerro, crema de leche, ciboulette.
           </p>
-          <div class="bowl-proteins truncate">
+<!--           <div class="bowl-proteins truncate">
             <div class="box-width-left truncate">
                 <span><i class="pe-7s-graph2"></i> 0cal</span>
                 <span class="marginleft10"><i class="pe-7s-graph1"></i> 250g</span>
             </div>
-            <!-- <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div> -->
-          </div>
+            <div class="precio-bowl">${{producto.PrecioTotal | number:'1.0-0'}}<sup>{{getDecimal(producto.PrecioTotal) | number:'2.0-0'}}</sup></div>
+          </div> -->
         </div>
       </a>              
     </div> 

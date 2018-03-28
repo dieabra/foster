@@ -1,8 +1,9 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 <script src="/js/clipboard.min.js"></script>
 <script src="/js/project.js"></script>
 <script src="/js/jquery.filterizr.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/contact_me.js"></script>
+<script src="/js/jqBootstrapValidation.js"></script>
 
 
 <script type="text/javascript">
@@ -11,9 +12,15 @@
 	  $("[data-toggle='tooltip']").tooltip();
 	});
 	$(function () {
-	$('[data-toggle="popover"]').popover()
-})
+  	$('[data-toggle="popover"]').popover()
+  })
 </script>
+
+<!-- Se inicializa el WOW.js -->
+<script>
+  new WOW().init();
+</script>
+
 
 
 
@@ -104,4 +111,11 @@
       }
     });    
   });
+</script>
+
+
+<script>
+  $(document).on('click', '#more', function(){
+    $("html, body").animate({ scrollTop: $(".explanation").offset().top }, 1000);
+  });    
 </script>

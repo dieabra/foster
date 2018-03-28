@@ -12,9 +12,19 @@
     <div class="site-wrapper">
       <?php include ('partials/_navbar.php'); ?>
 
-    <div class="video-background">
+    <!-- <div class="video-background">
       <div class="video-foreground">
         <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ?modestbranding=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <div class="hero">
+      <div class="hero-box relative">
+        <div class="center-center">
+          <img src="img/FosterNutritionID_05.png" class="img-responsive wow fadeInUp" alt="">
+          <p class="hero-title wow fadeInLeft" data-wow-delay="0.5s">El primer restaurante automatizado <br> de América Latina</p>
+        </div>
+        <a href="#" id="more"><i class="fa fa-chevron-down hero-icon wow fadeIn" data-wow-iteration="infinite"></i></a>
       </div>
     </div>
 
@@ -29,7 +39,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 wow fadeInUp">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">
@@ -39,7 +49,7 @@
                 <p class="step-info">Hacé tu pedido en una de las tablets</p>
               </div>
             </div>
-             <div class="col-sm-4">
+             <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">3'</div>
@@ -47,7 +57,7 @@
                 <p class="step-info">Esperá 3 minutos mientras preparamos tu pedido</p>
               </div>
             </div>
-             <div class="col-sm-4">
+             <div class="col-sm-4 wow fadeInUp" data-wow-delay="1s">
               <div class="text-center">
                 <div class="circle-number">
                   <div class="number">
@@ -142,6 +152,22 @@
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- JS -->
+    <?php include ('partials/_javascript.php'); ?>
+
+    <script>
+      $(document).ready(function() {
+        $('.navbar').hide();
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 100) {
+            $('.navbar').fadeIn('slow').addClass('navbar-fixed-top');
+          }
+          else {
+            $('.navbar').fadeOut('slow');
+          }
+        });
+      })
+    </script>
 
   </body>
 </html>
